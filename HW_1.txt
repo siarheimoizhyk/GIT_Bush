@@ -1,0 +1,103 @@
+HW_1. The first part
+Linux terminal (GitBash) commands
+
+1) See where I am
+2) Create a folder
+3) Go into a folder
+4) Create 3 folders
+5) Go into any folder
+6) Create 5 files (3 txt, 2 json)
+7) Create 3 folders
+8. List the contents of the folder
+9) + Open any txt file
+10) + Write something there, any text.
+11) + Save and exit.
+12) Exit the folder to the level above
+-
+13) Move any 2 files you created to any other folder.
+14) Copy any 2 files you created to any other folder.
+15) Find the file by name
+16) view the contents in real time (grep command) learn how it works.
+17) output the first few lines of the text file
+18) print a few last lines of the text file
+19) preview the contents of a long file (command less) learn how it works.
+20) print the date and time
+=========
+
+Task*
+1) Send an http request to the server.
+http://162.55.220.72:5005/terminal-hw-request
+2) Write a script that will automatically perform items 3, 4, 5, 6, 7, 8, 13
+---------------------------------------------------------
+1) pwd
+2) mkdir foldername
+3) cd foldername
+4) mkdir (example: mkdir qa_6 qa_7 qa_8)
+5) cd
+6) cat >> (example: cat >> q22.txt, etc.)
+7) mkdir 
+8) ls -la
+9) start filename (it does not work to open on Windows) // vim filename
+10) cat > filename // vim filename
+text
+11) ctrl+c
+12) cd .
+13) mv foldername/filename foldername (example: mv qa_6/q22.txt qa_7)
+14) cp foldername/filename foldername (example: cp qa_7/q22.txt qa_6)
+15) find -name filename (example: find -name q22.txt)
+16) use "grep" command to view the contents; 
+examples:
+cat filename
+result:
+line1
+line2
+Line
+line3
+ 
+grep -v 1 filename 
+Result: line without "1";
+
+grep line filename (case-sensitive)
+Result: show all lines except Line;
+
+grep -i line filename (case insensitive)
+result: show all lines in any case;
+
+grep -s line filename
+result: show three lines, because we don't care about case sensitivity;
+
+grep -ic line filename
+result: show all lines, case insensitivity was taken into account.
+
+grep -R line foldername
+result: it will print the name of the folder which contains the file we are interested in, it will show the
+the location where the information is contained.
+
+17) For example, print the first 2 lines 
+head -2 filename 
+18) let's output the last 3 lines 
+tail -3 filename
+19) the command less is only for browsing the file and doesn't allow to edit it, etc.
+less filename
+will open +- the same as in the command vim, to exit press "q".
+20) date
+
+
+Task*
+curl http://162.55.220.72:5005/terminal-hw-request
+curl -X POST http://162.55.220.72:5005/get_method?name=ang&age=20
+================================
+SCRIPT
+cat >> script.sh
+#! /bin/bash
+cd qa_5
+mkdir qa_13 qa_14 qa_15
+cd qa_13
+touch e1.txt e2.txt e3.txt e4.json e5.json
+mkdir qa_16 qa_17 qa_18
+ls -la
+cd .
+mv qa_13/e1.txt qa_5
+mv qa_13/e2.txt qa_5
+
+./script.sh

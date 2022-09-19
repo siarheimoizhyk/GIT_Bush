@@ -1,0 +1,104 @@
+TXT
+ 1. Create an external repository named TXT.
+ 2. Clone the TXT repository to your local computer.
+git clone link
+ 3. Create a "new.txt" file inside the local TXT.
+vim new.txt
+ 4. Add the file under the git.
+git add new.txt
+ 5. Commit the file.
+git commit -m "text"
+ 6. Push the file to an external GitHub repository.
+git push
+ 7. Edit the content of the file "new.txt" - write information about yourself (full name, age, number of pets, future salary desired). Write everything in TXT format.
+vim new.txt
+ 8. Send changes to external repository.
+git add new.txt
+git commit -m "text"
+git push
+ 9. Create a preferences.txt file
+vim preferences.txt
+ 10. In the preferences.txt file add information about your preferences (favorite movie, favorite show, favorite food, favorite time of year, party you would like to visit) in TXT format.
+ 11. Create a file sklls.txt add information about skills that will be studied on the course in TXT format
+ 12. Make a one-line commit.
+git commit -a -m "text"
+ 13. Send two files to an external repository at once.
+git push
+ 14. On the web interface, create a bug_report.txt file.
+ 15. Make Commit changes on the web interface.
+ 16. Modify the bug_report.txt file on the web interface and add the bug report in TXT format.
+ 17. Make Commit changes (save) the changes in the web interface.
+ 18. Synchronize external and local TXT repository
+git fetch
+git pull
+
+JSON
+ 4. Create an external repository named JSON.
+ 5. Clone the JSON repository to your local computer.
+git clone link
+ 6. Inside the local JSON create a file called "new.json".
+cd JSON
+vim new.json
+ 7. Add the file under git.
+git add new.json
+ 8. Commit the file.
+git commit -m "text"
+ 9. Push the file to an external GitHub repository.
+git push
+ 10. Edit the content of the file "new.json" - write information about yourself (name, age, number of pets, future salary desired). Write everything in JSON format.
+vim new.json
+git commit -a -m "text"
+ Send the changes to an external repository.
+git push
+ 12. Create a preferences.json file
+vim preferences.json
+ 13. In the preferences.json file, add information about your preferences (favorite movie, favorite show, favorite food, favorite time of year, party you would like to visit) in JSON format.
+ 14. Create sklls.json file to add information about skills that will be studied on the course in JSON format
+vim skills.json
+ 15. Send two files to an external repository at once.
+git add preferences.json skills.json
+git commit -m "text"
+git push
+ 16. On the web interface, create a bug_report.json file.
+ 17. Make Commit changes (save) the changes on the web interface.
+ 18. On the web interface, modify the bug_report.json file and add the bug report in JSON format.
+ 19. Make Commit changes (save) the changes in the web interface. 20.
+ 20. Synchronize external and local JSON repository
+git fetch
+git pull
+git fetch
+
+XML
+ 21. Create an external repository called XML.
+ 22. Clone the XML repository to your local machine.
+git clone link
+ 23. Inside the local XML, create a file called "new.xml".
+vim new.xml
+ 24. Add the file under the git.
+git add new.xml
+ 25. Commit the file.
+git commit -m "text"
+ 26. Send the file to an external GitHub repository.
+git push
+ 27. Edit the content of the "new.xml" file - Write information about yourself (full name, age, number of pets, future desired salary). Write everything in XML format.
+vim new.xml
+ 28. Submit your changes to an external repository.
+git commit -a -m "text"
+git push
+ 29. Create a preferences.xml file
+vim preferences.xml
+ 30. In the preferences.xml file add information about your preferences (favorite movie, favorite show, favorite food, favorite time of year, the party you would like to visit) in XML format.
+ 31. Create a sklls.xml file to add information about skills that will be studied on the course in XML format
+vim skills.xml
+ 32. Make a one line commit.
+git commit -a -m "text"
+ 33. Send two files to an external repository at once.
+git push
+ 34. On the web interface, create a bug_report.xml file.
+ 35. Make Commit changes on the web interface.
+ 36. On web interface modify bug_report.xml file, add bug report in XML format.
+ 37. Make Commit changes (save) the changes in the web interface.
+ 38. Synchronize external and local XML repository
+git fetch
+git pull 
+git fetch

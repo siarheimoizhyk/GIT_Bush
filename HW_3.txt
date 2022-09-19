@@ -1,0 +1,60 @@
+TASKS:
+1. On the local repository, make branches for:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+
+2. Run all the branches on an external repository
+3. In the Bag Reports branch make a text document with the structure of the bug report
+4. Run the bug report structure on an external repository
+5. Immerse the Bag Reports branch into Main
+6. Run main on the external repository.
+7. In the CheckLists branch sketch checklist structure.
+8. Run the structure on the external repository
+9. On the external repository, do a Pull Request of the CheckLists branch in the main
+10. Synchronize External and Local branches of Main
+---------------------------------------------------------------------------------------
+1) git branch Postman
+git branch Jmeter
+git branch CheckLists
+git branch BagReports
+git branch SQL
+git branch Charles
+git branch MobileTesting
+
+2) git push -u origin Postman
+git push -u origin Jmeter
+git push -u origin CheckLists
+git push -u origin BagReports
+git push -u origin SQL
+git push -u origin Charles
+git push -u origin MobileTesting
+
+3) git checkout BagReports
+touch bug_report.txt
+vim bug_report.txt
+
+4) git add bug_report.txt
+git commit -m "added structure"
+git push
+
+5) git checkout main
+git merge BagReports
+
+6) git checkout CheckLists
+touch checklist.txt
+vim checklist.txt
+
+8) git add checklist.txt
+git commit -m "added structure"
+git push
+
+9) create pull request on github
+
+10) git checkout main
+git fetch
+git pull
